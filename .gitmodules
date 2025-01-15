@@ -1,0 +1,3 @@
+[submodule "Khronos"]
+	path = Khronos
+	url = git@github.com:NhiNguyencmt8/Khronos.git

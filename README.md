@@ -1,5 +1,6 @@
-# Stretch Mapping:  A semantic household tidying project using the Stretch robot
-🤖🧹👕🧸👓 ⊂(▀¯▀⊂ )
+# Stretch Mapping: Proactive Mapping for Household Tidying
+
+Welcome to **Stretch Mapping**, a semantic household tidying project using the Stretch robot. This project focuses on proactive mapping and tidying tasks in household environments.
 
 ---
 
@@ -95,6 +96,51 @@ roslaunch khronos_ros stretch_mapping_online.launch
 
 ---
 
-## Support 🤝 (*ΦωΦ*)
+## Notice for Git Commits ⚠️
+
+**DON'T directly make changes to the submodules in the repository and expect them to be updated.** Since they are submodules, updates require a specific workflow. Instead, follow these steps:
+
+1. Clone the submodule repository (e.g., for Khronos) and make changes:
+   ```bash
+   git clone git@github.com:<githubaccount>/Khronos.git
+   cd Khronos
+   # Make your changes here
+   git add .
+   git commit -m "Your changes"
+   git push origin main
+   ```
+
+2. Navigate back to the StretchMapping repository:
+   ```bash
+   cd /path/to/StretchMapping
+   ```
+
+3. Update the submodule reference:
+   ```bash
+   git submodule status
+   git submodule update --init --recursive
+   cd Khronos
+   git remote -v
+   ```
+
+   If the URL is incorrect or missing, set the correct remote:
+   ```bash
+   git remote set-url origin git@github.com:<githubaccount>/Khronos.git
+   git fetch
+   git checkout main
+   ```
+
+4. Update the submodule pointer in StretchMapping:
+   ```bash
+   cd ..
+   git add Khronos
+   git commit -m "Update Khronos submodule to latest revision"
+   git push origin main
+   git submodule update --remote --merge
+   ```
+
+---
+
+## Support 🤝
 
 If you have any questions, please reach out to **Harsh** or **Leona**. We're happy to help!

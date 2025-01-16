@@ -1,12 +1,12 @@
 # Stretch Mapping: Proactive Mapping for Household Tidying
 
 Welcome to **Stretch Mapping**, a semantic household tidying project using the Stretch robot. This project focuses on proactive mapping and tidying tasks in household environments.
-
+🤖🧹👕🧸👓 ⊂(▀¯▀⊂ )
 ---
 
-## Installation
+## Installation 🚀
 
-### Setup a Catkin Workspace
+### Setup a Catkin Workspace 🛠️
 
 1. Install required tools:
    ```bash
@@ -23,13 +23,13 @@ Welcome to **Stretch Mapping**, a semantic household tidying project using the S
    catkin config --merge-devel
    ```
 
-### Install System Dependencies
+### Install System Dependencies 📦
 
 ```bash
 sudo apt install ros-$ROS_DISTRO-gtsam libgoogle-glog-dev nlohmann-json3-dev
 ```
 
-### Clone the Repository
+### Clone the Repository 📂
 
 1. Navigate to the `src` folder of your Catkin workspace:
    ```bash
@@ -59,7 +59,7 @@ sudo apt install ros-$ROS_DISTRO-gtsam libgoogle-glog-dev nlohmann-json3-dev
 
 ---
 
-## Additional Setup for ADE20K Dataset
+## Additional Setup for ADE20K Dataset 🖼️
 
 This project uses an online segmentation pipeline with a module trained on the ADE20K dataset. Add the following files inside your Khronos folder:
 
@@ -67,11 +67,11 @@ This project uses an online segmentation pipeline with a module trained on the A
 - `ade20kfull.yaml` => Place into `hydra/config/label_repmaps`
 - `ade20kfull_label_space.yaml` => Place into `hydra/config/label_spaces`
 
-> Feel free to adjust these configurations if you are using a different model.
+> 💡 Feel free to adjust these configurations if you are using a different model.
 
 ---
 
-## Usage
+## Usage 🎮
 
 ### Before Running Anything
 
@@ -80,14 +80,14 @@ Remember to source your workspace:
 source ~/catkin_ws/devel/setup.bash
 ```
 
-### Running Khronos with Bag Files (Offline)
+### Running Khronos with Bag Files (Offline) 🗂️
 
 To process a bag file:
 ```bash
 roslaunch khronos_ros stretch_mapping_offline.launch bag_path:=/your/path/to/bag/file
 ```
 
-### Running Khronos Live (Online)
+### Running Khronos Live (Online) 🔴
 
 For live mapping, set up the `segmentation_inference` module (TBD) and run:
 ```bash
@@ -96,6 +96,6 @@ roslaunch khronos_ros stretch_mapping_online.launch
 
 ---
 
-## Support
+## Support 🤝 (*ΦωΦ*)
 
 If you have any questions, please reach out to **Harsh** or **Leona**. We're happy to help!

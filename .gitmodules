@@ -1,3 +1,6 @@
 [submodule "Khronos"]
 	path = Khronos
 	url = git@github.com:NhiNguyencmt8/Khronos.git
+[submodule "orb_slam_2_ros"]
+	path = orb_slam_2_ros
+	url = https://github.com/harshmuriki/orb_slam_2_ros.git

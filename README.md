@@ -41,17 +41,22 @@ sudo apt install ros-$ROS_DISTRO-gtsam libgoogle-glog-dev nlohmann-json3-dev
    git clone git@github.com:NhiNguyencmt8/StretchMapping.git
    ```
 
-3. Navigate to the Khronos submodule:
+3. Clone the git submodules
    ```bash
-   cd StretchMapping/path/to/khronos
+   git submodule update --init --recursive
    ```
 
-4. Import additional dependencies:
+4. Navigate to the Khronos submodule:
+   ```bash
+   cd StretchMapping/Khronos
+   ```
+
+5. Import additional dependencies:
    ```bash
    vcs import . < install/ssh.rosinstall
    ```
 
-5. Navigate back to the Catkin workspace root and build:
+6. Navigate back to the Catkin workspace root and build:
    ```bash
    cd ~/catkin_ws
    catkin build khronos_ros

@@ -1,8 +1,40 @@
 # Stretch Mapping: Proactive Mapping for Household Tidying
 
-Welcome to **Stretch Mapping**, a semantic household tidying project using the Stretch robot. This project focuses on proactive mapping and tidying tasks in household environments.
-🤖🧹👕🧸👓 ⊂(▀¯▀⊂ )
----
+Welcome to **Stretch Mapping**, a semantic household tidying project using the Stretch robot. This project provides a proactive mapping framework that is usable for Stretch's indoor tasks in household environments.
+🤖🧹👕🧸
+
+[![Python 3](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
+[![GitHub Stars](https://img.shields.io/github/stars/username/repository?style=social)](https://github.com/NhiNguyencmt8/StretchMapping)
+[![Email](https://img.shields.io/badge/Email-contact-blue.svg)](mailto:nnguyen349@gatech.edu)
+[![Stretch Robot](https://img.shields.io/badge/Stretch_Robot-V3-green.svg)](https://hello-robot.com/stretch-3-product)
+[![Open Source](https://img.shields.io/badge/Open_Source-yes-brightgreen.svg)](https://opensource.org/)
+<a href="https://www.ros.org">
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/ROS-Dark.svg" alt="ROS" width="40" height="40">
+</a>
+
+
+
+**Table of Contents**
+- [Overview 👓](#overview)
+- [Evaluation ✍🏼](#evaluation-)
+- [Installation 🚀](#installation-)
+  - [Setup a Catkin Workspace 🛠️](#setup-a-catkin-workspace-)
+  - [Install System Dependencies 📦](#install-system-dependencies-)
+  - [Clone the Repository 📂](#clone-the-repository-)
+- [Additional Setup for ADE20K Dataset 🖼️](#additional-setup-for-ade20k-dataset-)
+- [Usage 🎮](#usage-)
+  - [Before Running Anything](#before-running-anything)
+  - [Running Khronos with Bag Files (Offline) 🗂️](#running-khronos-with-bag-files-offline-)
+  - [Running Khronos Live (Online) 🔴](#running-khronos-live-online-)
+- [Notice for Git Commits ⚠️](#notice-for-git-commits-)
+- [Support 🤝](#support-)
+
+## Overview 👓
+This is a Stretch robot pipeline for proactive mapping that intergrates Khronos, semantic-inference and ORB_SLAM as a package.
+This project introduces a unified pipeline for the Stretch robot that fuses **semantic-inference** and **ORB_SLAM** for proactive mapping. We leverage Khronos, a semantic segmentation module, to analyze and label environments in real time, providing rich contextual understanding for household navigation. Additionally, ORB_SLAM is employed to enhance the map's localization accuracy, ensuring precise alignment between the robot’s position and the generated semantic map. Evaluated with custom metrics, our pipeline demonstrates robust performance in mapping and localization, and we are open sourcing the complete codebase to support further advancements in household robotics research.
+
+## Evaluation ✍🏼
+Tbd
 
 ## Installation 🚀
 
@@ -84,6 +116,18 @@ Remember to source your workspace:
 ```bash
 source ~/catkin_ws/devel/setup.bash
 ```
+## Some guidelines
+To run `segmentation_inference` pipeline:
+```bash
+roslaunch semantic_inference_ros semantic_inference.launch
+```
+Remember to switch the ROS topic input in the launch file with your image topic. Sometimes there is some mismatch between your image raw input, the segmentation pipeline and Khronos input. Therefore, check the image type and sizes before running Khronos (you can also check our `script/reshape.py` for reference).
+
+To run `ORB_SLAM`:
+```bash
+rosrun ORB_SLAM ORB_SLAM PATH_TO_VOCABULARY PATH_TO_SETTINGS_FILE
+```
+Note: You might want to check our depth camera performance and tune of config it to make sure the output is at best.
 
 ### Running Khronos with Bag Files (Offline) 🗂️
 
@@ -94,10 +138,23 @@ roslaunch khronos_ros stretch_mapping_offline.launch bag_path:=/your/path/to/bag
 
 ### Running Khronos Live (Online) 🔴
 
-For live mapping, set up the `segmentation_inference` module (TBD) and run:
+For live mapping, set up the `segmentation_inference` module and run:
 ```bash
 roslaunch khronos_ros stretch_mapping_online.launch
 ```
+
+### Tuning Khronos
+If you want your performance to be better on the robot, it is best to tune it. The tunning configs can be found at `config/mapper/yourconfig.yaml` file. Here is some of our intuition notes while tuning that might help:
+
+| Params                               | Original Value | Best Value (for our Stretch) | Intuition/What does it affect when you change it                                                                                                                                  | Definition                                                                                                                                 |
+|--------------------------------------|----------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| min_output_separation                | 0.0            | 5-10s      | Depends on how slow you want Khronos to run - time between outputs                                                                                                               | Min time between outputs                                                                                                                   |
+| temporal_window                      | 3              | 10 - 100   | Updating slower                                                                                                                                                                  | Time duration (s) defining how long the observation should be considered for processing the window                                            |
+| min_cluster_size                     | 50             | 100        | Removes the smaller detections                                                                                                                                                   | In motion detection, it filters small, insignificant movements. In object detection, it ensures only sufficiently large objects are are considered |
+| use_full_connectivity                | true           | false      | Cleaner mesh and objects/bounding box                                                                                                                                           | Determines if full connectivity should be used when clustering objects in the detection process                                               |
+| min_object_volume                    | 0.005          | 0.5        | Detected objects' min volume                                                                                                                                                      | Specifies the minimum volume (in m³) that an object must have to be considered valid for extraction and tracking                              |
+| min_object_reconstruction_confidence | 0.5            | 0.70       | Only if really high, removing a few bounding boxes otherwise the confidence score is very high for the objects?                                                                    | Minimum confidence threshold (0 to 1) required for an object to be considered successfully reconstructed                                      |
+| ray_policy                           | Middle         | FirstAndLast | Gives better detections                                                                                                                                                           |                                                                                                                                             |
 
 ---
 
@@ -148,4 +205,4 @@ roslaunch khronos_ros stretch_mapping_online.launch
 
 ## Support 🤝
 
-If you have any questions, please reach out to **Harsh** or **Leona**. We're happy to help!
+If you have any questions, feel free to post an issue on this repo or please reach out to our contributers. We're happy to help!

@@ -1,8 +1,8 @@
 
 ---
-## Static Objects + No Person in view
+## #1 Static Objects + No Person in view
 
-This is experiment #1 where we evaluate Khronos (with and without Orbslam). In this scenario, we do not move any objects (in the apartment) throught the run and there are no persons in the view of robot as well. The experiment was conducted on Stretch RE2 Robot.
+This is experiment, we evaluate Khronos (with and without Orbslam). In this scenario, we do not move any objects (in the apartment) throught the run and there are no persons in the view of robot as well.
 
 Therefore there are **no** dynamic objects in the scene. The map is recorded for 1 one round of the apartment setting.
 
@@ -24,7 +24,7 @@ Therefore there are **no** dynamic objects in the scene. The map is recorded for
 - False Negatives: ???,???
 
 
-**Qualitative Observation**: Smaller objects like the ones mentioned above were discarded by the algorithm. Objects like TV, wall, Plant and Side Drawer were also not registered as objcts despite being segmented by the segmentation pipeline.
+**Qualitative Observation**: Smaller objects such as the ones mentioned above were discarded by the algorithm. Objects such as TV, wall, Plant and Side Drawer were also not registered as objcts despite being segmented by the segmentation pipeline.
 
 ### Khronos with ORBSLAM2
 

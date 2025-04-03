@@ -1,21 +1,20 @@
 ---
-## #3 Displace Objects + No Person in view
+## #3 Displaced Objects + No Person in view
 
 In this experiment, we evaluate Khronos (with and without ORBSLAM2). In this scenario, objects (in the apartment) are displaced while the robot maps the environment throught the run and there are no persons in the view of robot while it happens.
 
-Therefore there are **no** dynamic objects in the scene, however objects are displaced but are still considered as static. The map is recorded for one round of the apartment setting and objects are moved such that the robot is able to observe it in a single complete round.
+Therefore there are **no** dynamic objects in the scene, however objects are displaced but are still considered as static. The map is recorded for **two** rounds of the apartment setting and objects are first static while robot completes 1st round after which they are displaced during robot's 2nd round.
 
 ### Khronos with Stretch Odometry
 
-| Khronos Prediction | Ground Truth |
+| Khronos Prediction after round 1| Ground Truth (after round 1) |
 |:----------:|:---------------:|
-| <img src="https://github.com/user-attachments/assets/fa1e57ff-a8a2-4a81-aaee-35a21c28022a" width="92%"> | <img src="https://github.com/user-attachments/assets/a4a49dfb-b562-47bd-a0c3-60003c86ad84" width="100%"> |
-
-
+| <img src="https://github.com/user-attachments/assets/c9dc990e-4f2d-4bd7-ab4a-eb9fc75ead27" width="97%"> | <img src="https://github.com/user-attachments/assets/b90eaa47-be16-47b4-ab9e-a7c63f214b4e" width="100%"> |
+| **Khronos Prediction after round 2** | **Ground Truth (after round 2)** |
+| <img src="" width="97%"> | <img src="https://github.com/user-attachments/assets/6dd9b859-3424-4aa1-b30e-91efcc4e338c" width="100%"> |
 **Object Detection Metrics**: 
 - Recall: ???
 - Missed Objects: Plates, Apple, Bottle, Table, Plant, Side Drawer, Ball, TV, Wall, Lamp.
-
 
 **Dynamic Object Classification**: 
 - F1 Score: ???
@@ -26,9 +25,11 @@ Therefore there are **no** dynamic objects in the scene, however objects are dis
 
 ### Khronos with ORBSLAM2
 
-| Khronos Prediction | Ground Truth |
+| Khronos Prediction with ORBSLAM2 after round 1| Ground Truth (after round 1) |
 |:----------:|:---------------:|
-| <img src="https://github.com/user-attachments/assets/79a546e8-023a-4255-92f0-3af3a5d90b6d" width="92%"> | <img src="https://github.com/user-attachments/assets/a4a49dfb-b562-47bd-a0c3-60003c86ad84" width="100%"> |
+| <img src="https://github.com/user-attachments/assets/4e277384-db7c-41f9-8d7c-43adec773648" width="97%"> | <img src="https://github.com/user-attachments/assets/b90eaa47-be16-47b4-ab9e-a7c63f214b4e" width="100%"> |
+| **Khronos Prediction with ORBSLAM2 after round 2** | **Ground Truth (after round 2)** |
+| <img src="https://github.com/user-attachments/assets/f7c66edf-e399-4066-a742-c39731559599" width="97%"> | <img src="https://github.com/user-attachments/assets/6dd9b859-3424-4aa1-b30e-91efcc4e338c" width="100%"> |
 
 
 **Object Detection Metrics**: 

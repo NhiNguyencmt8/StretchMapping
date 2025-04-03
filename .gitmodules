@@ -4,6 +4,7 @@
 [submodule "orb_slam_2_ros"]
 	path = orb_slam_2_ros
 	url = https://github.com/harshmuriki/orb_slam_2_ros.git
+	branch = khronos
 [submodule "semantic_inference"]
 	path = semantic_inference
 	url = https://github.com/harshmuriki/semantic_inference.git

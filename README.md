@@ -41,7 +41,7 @@ This project introduces a unified pipeline for the Stretch robot that fuses **se
 ## Evaluation ✍🏼
 The final video goes here:
 
-[![Watch the video](https://img.youtube.com/vi/VIDEO_ID_HERE/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_HERE)
+[![Watch the video](https://img.youtube.com/vi/9r7H5XKUNsc/maxresdefault.jpg)](https://www.youtube.com/watch?v=9r7H5XKUNsc)
 
 ## Installation 🚀
 
@@ -163,7 +163,7 @@ If you want your performance to be better on the robot, it is best to tune it. T
 | min_object_reconstruction_confidence | 0.5            | 0.70       | Only if really high, removing a few bounding boxes otherwise the confidence score is very high for the objects?                                                                    | Minimum confidence threshold (0 to 1) required for an object to be considered successfully reconstructed                                      |
 | ray_policy                           | Middle         | FirstAndLast | Gives better detections                                                                                                                                                           |                                                                                                                                             |
 
-## Results 
+## Results
 
 The Stretch Mapping project has shown promising results in proactive mapping and localization. The integration of semantic inference and ORB_SLAM has led to improved accuracy in household navigation tasks. Below are some key results:
 - **Mapping Accuracy**: The system achieved an average mapping accuracy of 92% in household environments, significantly enhancing the robot's ability to navigate and understand its surroundings.
@@ -189,17 +189,17 @@ The bar plot compares object precision scores between Khronos and Stretch's Odom
 
 ### Mapping Results
 The following images showcase the mapping results from different scenarios evaluated in the Stretch Mapping project. Each scenario highlights the robot's ability to map and understand its environment under various conditions.
-1. **#1 Static Objects + No People in view**:
-   [Static Scene Mapping](./results/khronos_Static_Scene.md)
+1. **Static Objects + No People in view**:
+   [Static Scene Mapping](./results/Static_Objects_No_Person_inView.md)
    *The robot maps an apartment without dynamic objects or human presence.*
-2. **#2 Static Objects + People in view**:
-   ![Dynamic Objects Moving](./results/Static_Objects_Person_in_View.md)
+2. **Static Objects + People in view**:
+   [Dynamic Objects Moving](./results/Static_Objects_Person_in_View.md)
    *The robot maps an apartment with static objects and people visible in the scene.*
-3. **#3 Displaced Objects + No People in view**:
-   ![Objects Moving Behind](./results/Displaced_Objects_No_Person_InView.md)
+3. **Displaced Objects + No People in view**:
+   [Objects Moving Behind](./results/Displaced_Objects_No_Person_InView.md)
    *Objects are displaced around the scene (behind the robot) but no dynamic objects or people are present.*
-4. **#4 Dynamic Objects + Person Walking in view**:
-   ![Objects Moving In-front](./results/Dynamic_Objects_Person_InView.md)
+4. **Dynamic Objects + Person Walking in view**:
+   [Objects Moving In-front](./results/Dynamic_Objects_Person_InView.md)
    *Objects are moved by a person while the robot maps the environment.*
 
 ## Notice for Git Commits ⚠️

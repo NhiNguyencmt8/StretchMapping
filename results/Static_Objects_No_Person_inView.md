@@ -8,6 +8,10 @@ Therefore there are **no** dynamic objects in the scene. The map is recorded for
 
 ### Khronos with Stretch Odometry
 
+
+[![Khronos with Stretch Odometry](https://img.youtube.com/vi/uBZ3qUnPVIA/0.jpg)](https://www.youtube.com/watch?v=uBZ3qUnPVIA)
+
+
 | Khronos Prediction | Ground Truth |
 |:----------:|:---------------:|
 | <img src="https://github.com/user-attachments/assets/2fd1fde5-eacd-4d8e-85c7-0b4b0efed4d7" width="100%"> | <img src="https://github.com/user-attachments/assets/a4a49dfb-b562-47bd-a0c3-60003c86ad84" width="100%"> |

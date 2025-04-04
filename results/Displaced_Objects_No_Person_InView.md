@@ -9,11 +9,12 @@ Therefore there are **no** dynamic objects in the scene, however objects are dis
 
 [![Khronos with Stretch Odometry](https://img.youtube.com/vi/kYphTD3a7jM/0.jpg)](https://www.youtube.com/watch?v=kYphTD3a7jM)
 
-| Khronos Prediction after round 1| Ground Truth (after round 1) |
+<!--| Khronos Prediction after round 1| Ground Truth (after round 1) |
 |:----------:|:---------------:|
-| <img src="https://github.com/user-attachments/assets/c9dc990e-4f2d-4bd7-ab4a-eb9fc75ead27" width="97%"> | <img src="https://github.com/user-attachments/assets/b90eaa47-be16-47b4-ab9e-a7c63f214b4e" width="100%"> |
-| **Khronos Prediction after round 2** | **Ground Truth (after round 2)** |
-| <img src="https://github.com/user-attachments/assets/98ff370c-19e3-49b1-a826-5e786c82fc63" width="97%"> | <img src="https://github.com/user-attachments/assets/6dd9b859-3424-4aa1-b30e-91efcc4e338c" width="100%"> |
+| <img src="https://github.com/user-attachments/assets/c9dc990e-4f2d-4bd7-ab4a-eb9fc75ead27" width="97%"> | <img src="https://github.com/user-attachments/assets/b90eaa47-be16-47b4-ab9e-a7c63f214b4e" width="100%"> |-->
+| **Khronos Prediction after displacing objects** | **Ground Truth after displacing objects** |
+|:----------:|:---------------:|
+| <img src="https://github.com/user-attachments/assets/98ff370c-19e3-49b1-a826-5e786c82fc63" width="100%"> | <img src="https://github.com/user-attachments/assets/6dd9b859-3424-4aa1-b30e-91efcc4e338c" width="100%"> |
 
 **Object Detection Metrics**: 
 - Recall: ???
@@ -30,10 +31,11 @@ Therefore there are **no** dynamic objects in the scene, however objects are dis
 
 [![Khronos with ORBSLAM2](https://img.youtube.com/vi/FJ-SNZ0YGzU/0.jpg)](https://www.youtube.com/watch?v=FJ-SNZ0YGzU)
 
-| Khronos Prediction with ORBSLAM2 after round 1| Ground Truth (after round 1) |
+<!--| Khronos Prediction with ORBSLAM2 after round 1| Ground Truth (after round 1) |
 |:----------:|:---------------:|
-| <img src="https://github.com/user-attachments/assets/4e277384-db7c-41f9-8d7c-43adec773648" width="97%"> | <img src="https://github.com/user-attachments/assets/b90eaa47-be16-47b4-ab9e-a7c63f214b4e" width="100%"> |
-| **Khronos Prediction with ORBSLAM2 after round 2** | **Ground Truth (after round 2)** |
+| <img src="https://github.com/user-attachments/assets/4e277384-db7c-41f9-8d7c-43adec773648" width="97%"> | <img src="https://github.com/user-attachments/assets/b90eaa47-be16-47b4-ab9e-a7c63f214b4e" width="100%"> | -->
+| **Khronos Prediction with ORBSLAM2 after displacing objects** | **Ground Truth after displacing objects** |
+|:----------:|:---------------:|
 | <img src="https://github.com/user-attachments/assets/f7c66edf-e399-4066-a742-c39731559599" width="97%"> | <img src="https://github.com/user-attachments/assets/6dd9b859-3424-4aa1-b30e-91efcc4e338c" width="100%"> |
 
 

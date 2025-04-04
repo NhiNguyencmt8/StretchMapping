@@ -1,7 +1,7 @@
 ---
-## #3 Displaced Objects + No Person in view
+## #3 Displaced Objects + No People in view
 
-In this experiment, we evaluate Khronos (with and without ORBSLAM2). In this scenario, objects (in the apartment) are displaced while the robot maps the environment throught the run and there are no persons in the view of robot while it happens.
+In this experiment, we evaluate Khronos (with and without ORBSLAM2). In this scenario, objects (in the apartment) are displaced while the robot maps the environment throught the run and there are no people in the view of robot while it happens.
 
 Therefore there are **no** dynamic objects in the scene, however objects are displaced but are still considered as static. The map is recorded for **two** rounds of the apartment setting and objects are first static while robot completes 1st round after which they are displaced during robot's 2nd round.
 

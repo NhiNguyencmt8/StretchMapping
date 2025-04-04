@@ -1,7 +1,7 @@
 ---
-## #2 Static Objects + Person(s) in view
+## #2 Static Objects + People in view
 
-This is experiment, we evaluate Khronos (with and without Orbslam). In this scenario, we do not move any objects (in the apartment) throught the run and there are no persons in the view of robot as well.
+This is experiment, we evaluate Khronos (with and without Orbslam). In this scenario, we do not move any objects (in the apartment) throught the run and there are no people in the view of robot as well.
 
 Therefore there are **no** dynamic objects in the scene. The map is recorded for 1 one round of the apartment setting.
 

@@ -16,7 +16,7 @@ Therefore there are **no** dynamic objects in the scene. The map is recorded for
 
 **Object Detection Metrics**: 
 - Recall: ???
-- Missed Objects: Plates, Apple, Bottle, Table, Plant, Side Drawer, Ball, TV, Wall, Lamp.
+- Missed Objects: Plates, Apple, Bottle, Table, Plant, Ball, TV, Wall, Lamp.
 
 
 **Dynamic Object Classification**: 
@@ -37,7 +37,7 @@ Therefore there are **no** dynamic objects in the scene. The map is recorded for
 
 **Object Detection Metrics**: 
 - Recall: ???
-- Missed Objects: Plates, Apple, Bottle, Table, Plant, Side Drawer, Ball, TV, Wall, Lamp.
+- Missed Objects: Plates, Apple, Bottle, Table, Plant, Ball, TV, Wall, Lamp.
 
 
 **Dynamic Object Classification**: 

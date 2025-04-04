@@ -20,14 +20,14 @@ Therefore there are objects and people as dynamic objects in the scene. The map 
 
 **Object Detection Metrics**: 
 - Recall: ???
-- Missed Objects: Plates, Apple, Bottle, Table, Plant, Side Drawer, Ball, TV, Wall, Lamp.
+- Missed Objects: Plates, Apple, Bottle, Ball, Wall
 
 **Dynamic Object Classification**: 
 - F1 Score: ???
 - False Positives: ???,???
 - False Negatives: ???,???
 
-**Qualitative Observation**: Smaller objects such as the ones mentioned above were discarded by the algorithm. Objects such as TV, wall, Plant and Side Drawer were also not registered as objcts despite being segmented by the segmentation pipeline.
+**Qualitative Observation**: Smaller objects such as the ones mentioned above were discarded by the algorithm. Objects were also not registered despite being segmented by the segmentation pipeline.
 
 ### Khronos with ORBSLAM2
 
@@ -36,13 +36,13 @@ Therefore there are objects and people as dynamic objects in the scene. The map 
 | Ground Truth (after round 1) | **Ground Truth (after round 2)**|
 |:----------:|:---------------:|
 | <img src="https://github.com/user-attachments/assets/f2b72798-91da-4bad-9eed-abb3c47eeedb" width="97%"> | <img src="https://github.com/user-attachments/assets/e409aaa8-7c10-458a-a637-5481dacd5879" width="100%"> |
-| **Khronos prediction without ORBSLAM2**|
+| **Khronos prediction with ORBSLAM2**|
 | <img src="https://github.com/user-attachments/assets/4f727960-aad4-41ad-9e95-2a0246433b21" width="100%"> |
 
 
 **Object Detection Metrics**: 
 - Recall: ???
-- Missed Objects: Plates, Apple, Bottle, Table, Plant, Side Drawer, Ball, TV, Wall, Lamp.
+- Missed Objects: Plates, Apple, Bottle, Ball, Wall
 
 
 **Dynamic Object Classification**: 

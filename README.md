@@ -46,6 +46,10 @@ This is main evaluation of the Stretch Mapping project, where we assess the perf
 
 [![Watch the video](https://img.youtube.com/vi/9r7H5XKUNsc/maxresdefault.jpg)](https://www.youtube.com/watch?v=9r7H5XKUNsc)
 
+<!-- <div align="center">
+   <img src="./results/Combined Experiment.gif" alt="Khronos Dynamic Mapping in Action">
+</div> -->
+
 
 ## Installation 🚀
 

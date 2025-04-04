@@ -9,7 +9,7 @@ Therefore there are **no** dynamic objects in the scene. The map is recorded for
 ### Khronos with Stretch Odometry
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uBZ3qUnPVIA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Khronos with Stretch Odometry](https://img.youtube.com/vi/uBZ3qUnPVIA/0.jpg)](https://www.youtube.com/watch?v=uBZ3qUnPVIA)
 
 
 | Khronos Prediction | Ground Truth |
@@ -31,6 +31,8 @@ Therefore there are **no** dynamic objects in the scene. The map is recorded for
 **Qualitative Observation**: Smaller objects such as the ones mentioned above were discarded by the algorithm. Objects such as TV, wall, Plant and Side Drawer were also not registered as objcts despite being segmented by the segmentation pipeline.
 
 ### Khronos with ORBSLAM2
+
+[![Khronos with ORBSLAM2](https://img.youtube.com/vi/6WwBkJ053Ys/0.jpg)](https://www.youtube.com/watch?v=6WwBkJ053Ys)
 
 | Khronos Prediction | Ground Truth |
 |:----------:|:---------------:|

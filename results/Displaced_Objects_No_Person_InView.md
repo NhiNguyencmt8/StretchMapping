@@ -7,6 +7,8 @@ Therefore there are **no** dynamic objects in the scene, however objects are dis
 
 ### Khronos with Stretch Odometry
 
+[![Khronos with Stretch Odometry](https://img.youtube.com/vi/kYphTD3a7jM/0.jpg)](https://www.youtube.com/watch?v=kYphTD3a7jM)
+
 | Khronos Prediction after round 1| Ground Truth (after round 1) |
 |:----------:|:---------------:|
 | <img src="https://github.com/user-attachments/assets/c9dc990e-4f2d-4bd7-ab4a-eb9fc75ead27" width="97%"> | <img src="https://github.com/user-attachments/assets/b90eaa47-be16-47b4-ab9e-a7c63f214b4e" width="100%"> |
@@ -24,6 +26,8 @@ Therefore there are **no** dynamic objects in the scene, however objects are dis
 **Qualitative Observation**: Smaller objects such as the ones mentioned above were discarded by the algorithm. Objects such as TV, wall, Plant and Side Drawer were also not registered as objcts despite being segmented by the segmentation pipeline.
 
 ### Khronos with ORBSLAM2
+
+[![Khronos with ORBSLAM2](https://img.youtube.com/vi/FJ-SNZ0YGzU/0.jpg)](https://www.youtube.com/watch?v=FJ-SNZ0YGzU)
 
 | Khronos Prediction with ORBSLAM2 after round 1| Ground Truth (after round 1) |
 |:----------:|:---------------:|

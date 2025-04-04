@@ -39,11 +39,16 @@ This is a Stretch robot pipeline for proactive mapping that intergrates Khronos,
 This project introduces a unified pipeline for the Stretch robot that fuses **semantic-inference** and **ORB_SLAM** for proactive mapping. We leverage Khronos, a semantic segmentation module, to analyze and label environments in real time, providing rich contextual understanding for household navigation. Additionally, ORB_SLAM is employed to enhance the map's localization accuracy, ensuring precise alignment between the robot’s position and the generated semantic map. Evaluated with custom metrics, our pipeline demonstrates robust performance in mapping and localization, and we are open sourcing the complete codebase to support further advancements in household robotics research.
 
 ## Evaluation ✍🏼
-The final video goes here:
+
+
+This is main evaluation of the Stretch Mapping project, where we assess the performance of our proactive mapping pipeline in a household scenario with a person moving around the environment. The evaluation focuses on the integration of **Khronos** for semantic segmentation and **ORB_SLAM** for localization.
+
 
 [![Watch the video](https://img.youtube.com/vi/9r7H5XKUNsc/maxresdefault.jpg)](https://www.youtube.com/watch?v=9r7H5XKUNsc)
 
+
 ## Installation 🚀
+
 
 ### Setup a Catkin Workspace 🛠️
 
@@ -162,8 +167,7 @@ If you want your performance to be better on the robot, it is best to tune it. T
 | min_object_volume                    | 0.005          | 0.5        | Detected objects' min volume                                                                                                                                                      | Specifies the minimum volume (in m³) that an object must have to be considered valid for extraction and tracking                              |
 | min_object_reconstruction_confidence | 0.5            | 0.70       | Only if really high, removing a few bounding boxes otherwise the confidence score is very high for the objects?                                                                    | Minimum confidence threshold (0 to 1) required for an object to be considered successfully reconstructed                                      |
 | ray_policy                           | Middle         | FirstAndLast | Gives better detections                                                                                                                                                           |                                                                                                                                             |
-
-## Results
+## Results 📊
 
 The Stretch Mapping project has shown promising results in proactive mapping and localization. The integration of semantic inference and ORB_SLAM has led to improved accuracy in household navigation tasks. Below are some key results:
 - **Mapping Accuracy**: The system achieved an average mapping accuracy of 92% in household environments, significantly enhancing the robot's ability to navigate and understand its surroundings.
@@ -174,14 +178,17 @@ The Stretch Mapping project has shown promising results in proactive mapping and
 
 Various experiments were conducted to evaluate the performance of the Stretch Mapping system. The following images illustrate the mapping results in different scenarios:
 
-### Bar Plot:
-The bar plot compares object precision scores between Khronos and Stretch's Odom (blue) and Khronos integrated with ORBSLAM2 (red) across different scenarios. It shows that ORBSLAMs integration generally improves precision, particularly in dynamic scenes involving human movement and object displacement. However, the improvement is marginal in static scenes with no motion.
+### Object Precision Comparison Bar Plot
+
+The bar plot illustrates the object precision scores across various scenarios, comparing two configurations: Khronos with Stretch's Odom (blue) and Khronos integrated with ORBSLAM2 (red). The results highlight that integrating ORBSLAM2 generally enhances precision, especially in dynamic scenarios involving human movement and object displacement. However, the improvement is minimal in static scenes with no motion.
 
 <div align="center">
    <img src="./results/comparision_plot.png" alt="Bar Plot of Mapping Accuracy">
 </div>
 
-### Confusion Matrix:
+### Confusion Matrix 📊
+
+The confusion matrix below provides a detailed breakdown of the classification performance for the semantic mapping system. It highlights the true positive, false positive, and false negative rates for various object categories, offering insights into the system's accuracy and areas for improvement.
 
 <div align="center">
    <img src="./results/confusion_matrix.png" alt="Confusion Matrix">
@@ -189,17 +196,13 @@ The bar plot compares object precision scores between Khronos and Stretch's Odom
 
 ### Mapping Results
 The following images showcase the mapping results from different scenarios evaluated in the Stretch Mapping project. Each scenario highlights the robot's ability to map and understand its environment under various conditions.
-1. **Static Objects + No People in view**:
-   [Static Scene Mapping](./results/Static_Objects_No_Person_inView.md)
+1. [**Static Objects + No People in view**](./results/Static_Objects_No_Person_inView.md):
    *The robot maps an apartment without dynamic objects or human presence.*
-2. **Static Objects + People in view**:
-   [Dynamic Objects Moving](./results/Static_Objects_Person_in_View.md)
+2. [**Static Objects + People in view**](./results/Static_Objects_Person_in_View.md):
    *The robot maps an apartment with static objects and people visible in the scene.*
-3. **Displaced Objects + No People in view**:
-   [Objects Moving Behind](./results/Displaced_Objects_No_Person_InView.md)
+3. [**Displaced Objects + No People in view**](./results/Displaced_Objects_No_Person_InView.md):
    *Objects are displaced around the scene (behind the robot) but no dynamic objects or people are present.*
-4. **Dynamic Objects + Person Walking in view**:
-   [Objects Moving In-front](./results/Dynamic_Objects_Person_InView.md)
+4. [**Dynamic Objects + Person Walking in view**](./results/Dynamic_Objects_Person_InView.md):
    *Objects are moved by a person while the robot maps the environment.*
 
 ## Notice for Git Commits ⚠️

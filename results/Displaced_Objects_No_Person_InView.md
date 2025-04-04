@@ -13,10 +13,11 @@ Therefore there are **no** dynamic objects in the scene, however objects are dis
 |:----------:|:---------------:|
 | <img src="https://github.com/user-attachments/assets/c9dc990e-4f2d-4bd7-ab4a-eb9fc75ead27" width="97%"> | <img src="https://github.com/user-attachments/assets/b90eaa47-be16-47b4-ab9e-a7c63f214b4e" width="100%"> |
 | **Khronos Prediction after round 2** | **Ground Truth (after round 2)** |
-| <img src="" width="97%"> | <img src="https://github.com/user-attachments/assets/6dd9b859-3424-4aa1-b30e-91efcc4e338c" width="100%"> |
+| <img src="https://github.com/user-attachments/assets/98ff370c-19e3-49b1-a826-5e786c82fc63" width="97%"> | <img src="https://github.com/user-attachments/assets/6dd9b859-3424-4aa1-b30e-91efcc4e338c" width="100%"> |
+
 **Object Detection Metrics**: 
 - Recall: ???
-- Missed Objects: Plates, Apple, Bottle, Table, Plant, Side Drawer, Ball, TV, Wall, Lamp.
+- Missed Objects: Plates, Apple, Bottle, Plant, Book, Ball, TV, Wall, Lamp.
 
 **Dynamic Object Classification**: 
 - F1 Score: ???
@@ -38,7 +39,7 @@ Therefore there are **no** dynamic objects in the scene, however objects are dis
 
 **Object Detection Metrics**: 
 - Recall: ???
-- Missed Objects: Plates, Apple, Bottle, Table, Plant, Side Drawer, Ball, TV, Wall, Lamp.
+- Missed Objects: Plates, Apple, Table, Ball, TV, Wall, Lamp.
 
 
 **Dynamic Object Classification**: 
@@ -46,4 +47,4 @@ Therefore there are **no** dynamic objects in the scene, however objects are dis
 - False Positives: ???,???
 - False Negatives: ???,???
 
-**Qualitative Observation**: With the addition of ORBSLAM2, Khronos did not perform substantially better. Same results were seen.
+**Qualitative Observation**: With the addition of ORBSLAM2, Khronos performed substantially better as smaller objects like bottle and book were detected and tracked accurately

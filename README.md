@@ -257,3 +257,8 @@ The following images showcase the mapping results from different scenarios evalu
 ## Support 🤝
 
 If you have any questions, feel free to post an issue on this repo or please reach out to our contributers. We're happy to help!
+
+## Contributors:
+1. Harsh Muriki: -
+2. Nhi Nyugen (Leona): -
+3. Rahul Rustagi: rustagirahul24@gmail.com

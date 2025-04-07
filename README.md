@@ -112,7 +112,7 @@ For a detailed analysis, please check out the results in the `doc` folder
 
 ---
 
-## Support and Contriu
+## Support and Contribution
 
 If you have any questions, feel free to post an issue on this repo or please reach out to our contributers. We're happy to help!
 

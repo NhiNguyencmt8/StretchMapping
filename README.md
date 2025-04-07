@@ -54,18 +54,7 @@ This is main evaluation of the Stretch Mapping project, where we assess the perf
 ---
 ## Results 📊
 
-The Stretch Mapping project has shown promising results in proactive mapping and localization. The integration of semantic inference and ORB_SLAM has led to improved accuracy in household navigation tasks. Below are some key results:
-- **Mapping Accuracy**: The system achieved an average mapping accuracy of 92% in household environments, significantly enhancing the robot's ability to navigate and understand its surroundings.
-- **Localization Precision**: The integration of ORB_SLAM improved localization precision by 15% compared to previous methods, allowing the robot to maintain its position more effectively during household tasks.
-- **Real-time Performance**: The system demonstrated real-time processing capabilities, with an average latency of 200ms per frame, ensuring that the robot can respond quickly to changes in the environment.
-- **Robustness in Dynamic Environments**: The system maintained stable performance even in dynamic household settings, where objects were frequently moved or rearranged, showcasing its adaptability.
-- **Visualization**: The generated maps and semantic labels were visually coherent, allowing for easy interpretation of the robot's understanding of the environment. Below are some sample visualizations from the project:
-
-Various experiments were conducted to evaluate the performance of the Stretch Mapping system. The following image illustrate the mapping results in different scenarios:
-
-### Object Precision Comparison Bar Plot
-
-The bar plot illustrates the object precision scores across various scenarios, comparing two configurations: Khronos with Stretch's Odom (blue) and Khronos integrated with ORBSLAM2 (red). The results highlight that integrating ORBSLAM2 generally enhances precision, especially in dynamic scenarios involving human movement and object displacement. However, the improvement is minimal in static scenes with no motion.
+The Stretch Mapping project has shown promising results in proactive mapping and localization. The bar plot illustrates the object precision scores across various scenarios, comparing two configurations: Khronos with Stretch's Odom (blue) and Khronos integrated with ORBSLAM2 (red). The results highlight that integrating ORBSLAM2 generally enhances precision, especially in dynamic scenarios involving human movement and object displacement. However, the improvement is minimal in static scenes with no motion.
 
 <div align="center">
    <img src="./doc/recall_score_bar_plot.png" alt="Bar Plot of Mapping Accuracy">

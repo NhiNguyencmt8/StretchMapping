@@ -1,0 +1,33 @@
+
+---
+## #1 Static Objects + No People in view
+
+This is experiment, we evaluate Khronos (with and without Orbslam). In this scenario, we do not move any objects (in the apartment) throughout the run and there are no people in the view of robot as well.
+
+Therefore there are **no** dynamic objects in the scene. The map is recorded for 1 one round of the apartment setting.
+
+### Khronos with Stretch Odometry
+
+
+[![Khronos with Stretch Odometry](https://img.youtube.com/vi/uBZ3qUnPVIA/0.jpg)](https://www.youtube.com/watch?v=uBZ3qUnPVIA)
+
+
+| Khronos Prediction | Ground Truth |
+|:----------:|:---------------:|
+| <img src="https://github.com/user-attachments/assets/2fd1fde5-eacd-4d8e-85c7-0b4b0efed4d7" width="100%"> | <img src="https://github.com/user-attachments/assets/a4a49dfb-b562-47bd-a0c3-60003c86ad84" width="100%"> |
+
+
+**Qualitative Observation**: Smaller objects such as the ones mentioned above were discarded by the algorithm. Objects such as TV, wall, Plant and Side Drawer were also not registered as objcts despite being segmented by the segmentation pipeline.
+- Missed Objects: Plates, Apple, Bottle, Table, Plant, Side Drawer, Ball, TV, Wall.
+
+
+### Khronos with ORBSLAM2
+
+[![Khronos with ORBSLAM2](https://img.youtube.com/vi/6WwBkJ053Ys/0.jpg)](https://www.youtube.com/watch?v=6WwBkJ053Ys)
+
+| Khronos Prediction | Ground Truth |
+|:----------:|:---------------:|
+| <img src="https://github.com/user-attachments/assets/52c210ca-6a3d-42e6-bd80-3dc530a2d3af" width="100%"> | <img src="https://github.com/user-attachments/assets/a4a49dfb-b562-47bd-a0c3-60003c86ad84" width="100%"> |
+
+**Qualitative Observation**: With the addition of ORBSLAM2, Khronos was able to register Table and Side Drawer as objects. This could be because of better mesh creation, these objects were not considered as dynamic and thereby registered as objects.
+- Missed Objects: Plates, Apple, Bottle, Plant, Ball, TV, Wall.

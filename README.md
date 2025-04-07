@@ -55,7 +55,7 @@ The bar plot illustrates the object precision scores across various scenarios, c
 </div>
 
 ### Mapping Results
-The following images showcase the mapping results from different scenarios evaluated in the Stretch Mapping project. Each scenario highlights the robot's ability to map and understand its environment under various conditions.
+The following images showcase the mapping results from different scenarios on which our framework is evaluated. Each scenario highlights the robot's ability to map and understand its environment under various conditions.
 1. [**Static Objects + No People in view**](./doc/Static_Objects_No_Person_inView.md):
    *The robot maps an apartment without dynamic objects or human presence.*
 2. [**Static Objects + People in view**](./doc/Static_Objects_Person_in_View.md):
@@ -64,6 +64,8 @@ The following images showcase the mapping results from different scenarios evalu
    *Objects are displaced around the scene (behind the robot) but no dynamic objects or people are present.*
 4. [**Dynamic Objects + Person Walking in view**](./doc/Dynamic_Objects_Person_InView.md):
    *Objects are moved by a person while the robot maps the environment.*
+   
+For a detailed analysis, please check out the results in the `doc` folder
 
 ## Notice for Git Commits ⚠️
 

@@ -122,5 +122,5 @@ If you have any questions, feel free to post an issue on this repo or please rea
 
 ## Contributors:
 1. Harsh Muriki: -
-2. Nhi Nyugen (Leona): -
+2. Nhi Nguyen (Leona): yennhi1908hcm@gmail.com
 3. Rahul Rustagi: rustagirahul24@gmail.com

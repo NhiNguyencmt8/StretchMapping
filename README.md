@@ -9,7 +9,6 @@ system. IEEE Transactions on Robotics, 31(5):1147–1163, 2015.
 
 
 [![Python 3](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
-<!-- [![GitHub Stars](https://img.shields.io/github/stars/username/repository?style=social)](https://github.com/NhiNguyencmt8/StretchMapping) -->
 [![Email](https://img.shields.io/badge/Email-contact-blue.svg)](mailto:nnguyen349@gatech.edu)
 [![Stretch Robot](https://img.shields.io/badge/Stretch_Robot-V3-green.svg)](https://hello-robot.com/stretch-3-product)
 [![Open Source](https://img.shields.io/badge/Open_Source-yes-brightgreen.svg)](https://opensource.org/)
@@ -21,20 +20,9 @@ system. IEEE Transactions on Robotics, 31(5):1147–1163, 2015.
 
 **Table of Contents**
 - [Evaluation ✍🏼](#evaluation-)
-- [Installation 🚀](doc/Installation.md)
-  - [Setup a Catkin Workspace 🛠️](doc/Installation.md#setup-a-catkin-workspace-)
-  - [Install System Dependencies 📦](doc/Installation.md#install-system-dependencies-)
-  - [Clone the Repository 📂](doc/Installation.md#clone-the-repository-)
-- [Usage 🎮](doc/Usage.md)
-  - [Before Running Anything](doc/Usage.md#before-running-anything)
-  - [Additional Setup for ADE20K Dataset 🖼️](doc/Usage.md#additional-setup-for-ade20k-dataset-)
-- [Runing and Tuning Khronos](doc/Runing_and_Tuning_Khronos.md)
-  - [Running Khronos with Bag Files (Offline) 🗂️](doc/Runing_and_Tuning_Khronos.md#running-khronos-with-bag-files-offline-)
-  - [Running Khronos Live (Online) 🔴](doc/Runing_and_Tuning_Khronos.md#running-khronos-live-)
-  - [Tuning Khronos](doc/Runing_and_Tuning_Khronos.md#tuning-khronos)
+- [Installation 🚀 and Usage 🎮](#installation-and-usage-)
 - [Results 📊](#results-)
-- [Notice for Git Commits ⚠️](#notice-for-git-commits-)
-- [Support 🤝](#support-)
+- [Support and Contribution 🤝](#support-and-contribution-)
 
 ## Evaluation ✍🏼
 
@@ -56,6 +44,11 @@ The bar plot illustrates the object precision scores across various scenarios, c
    <img src="./doc/recall_score_bar_plot.png" alt="Bar Plot of Mapping Accuracy">
 </div>
 
+## Installation 🚀 and Usage 🎮
+ 
+This repository is tested on Ubuntu 20.04 and ROS Kinetic, but would potentially work on any ROS1 distribution. Refer to [Installation.md](doc/Installation.md) for installation instructions, and [Usage.md](doc/Installation.md) for instructions on how to run the system, both online on a robot and offline using ROS bags, and also a guide on how to tune various tuning parameters.
+
+
 ### Mapping Results
 The following images showcase the mapping results from different scenarios on which our framework is evaluated. Each scenario highlights the robot's ability to map and understand its environment under various conditions.
 1. [**Static Objects + No People in view**](./doc/Static_Objects_No_Person_inView.md):
@@ -69,7 +62,15 @@ The following images showcase the mapping results from different scenarios on wh
    
 For a detailed analysis, please check out the results in the `doc` folder
 
-## Notice for Git Commits ⚠️
+
+
+---
+
+## Support and Contribution
+
+If you have any questions, feel free to post an issue on this repo or please reach out to our contributers. We're happy to help! To contribute to this codebase, please open a pull request or reach out to us via email.
+
+#### Notice for contributing changes to Submodules ⚠️
 
 **DON'T directly make changes to the submodules in the repository and expect them to be updated.** Since they are submodules, updates require a specific workflow. Instead, follow these steps:
 
@@ -111,12 +112,6 @@ For a detailed analysis, please check out the results in the `doc` folder
    git push origin main
    git submodule update --remote --merge
    ```
-
----
-
-## Support and Contribution
-
-If you have any questions, feel free to post an issue on this repo or please reach out to our contributers. We're happy to help!
 
 ## Contributors:
 1. Harsh Muriki: harshsuhith@gmail.com

@@ -54,7 +54,7 @@ This is main evaluation of the Stretch Mapping project, where we assess the perf
 ---
 ## Results 📊
 
-The Stretch Mapping project has shown promising results in proactive mapping and localization. The bar plot illustrates the object precision scores across various scenarios, comparing two configurations: Khronos with Stretch's Odom (blue) and Khronos integrated with ORBSLAM2 (red). The results highlight that integrating ORBSLAM2 generally enhances precision, especially in dynamic scenarios involving human movement and object displacement. However, the improvement is minimal in static scenes with no motion.
+The Stretch Mapping project has shown promising results in proactive mapping and localization. The bar plot illustrates the object precision scores across various scenarios, comparing two configurations: Khronos with the robot's odometry (blue) and Khronos integrated with ORBSLAM2 (red). The results highlight that integrating ORBSLAM2 enhance precision in scenarios involving object displacement out-of-view. However, the two configurations perform comparably in scenarios with humans moving in view.
 
 <div align="center">
    <img src="./doc/recall_score_bar_plot.png" alt="Bar Plot of Mapping Accuracy">

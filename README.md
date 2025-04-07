@@ -29,10 +29,6 @@ Welcome to **Stretch Mapping**, a semantic household tidying project using the S
   - [Running Khronos Live (Online) 🔴](doc/Runing_and_Tuning_Khronos.md#running-khronos-live-)
   - [Tuning Khronos](doc/Runing_and_Tuning_Khronos.md#tuning-khronos)
 - [Results 📊](#results-)
-  - [Static Scene Mapping](#static-scene-mapping)
-  - [Dynamic Objects (Humans) Moving](#dynamic-objects-humans-moving)
-  - [Objects Moving Behind the robot](#objects-moving-behind-the-robot)
-  - [Objects Moving In-front of the robot](#objects-moving-in-front-of-the-robot)
 - [Notice for Git Commits ⚠️](#notice-for-git-commits-)
 - [Support 🤝](#support-)
 

@@ -1,7 +1,6 @@
 # Stretch Mapping: A Proactive Mapping Pipeline for Household Tidying
 
-Welcome to **Stretch Mapping**, a semantic household tidying project using the Stretch robot. This project provides a proactive mapping framework that is usable for Stretch's indoor tasks in household environments.
-🤖🧹👕🧸
+Welcome to **Stretch Mapping**, a proactive mapping framework that is usable for Stretch's indoor tasks in household environments. 🤖🧹👕🧸
 
 [![Python 3](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
 <!-- [![GitHub Stars](https://img.shields.io/github/stars/username/repository?style=social)](https://github.com/NhiNguyencmt8/StretchMapping) -->
@@ -33,12 +32,11 @@ Welcome to **Stretch Mapping**, a semantic household tidying project using the S
 - [Support 🤝](#support-)
 
 ## Overview 👓
-This is a Stretch robot pipeline for proactive mapping that intergrates Khronos, semantic-inference and ORB_SLAM as a package.
-This project introduces a unified pipeline for the Stretch robot that fuses **semantic-inference** and **ORB_SLAM** for proactive mapping. We leverage Khronos, a semantic segmentation module, to analyze and label environments in real time, providing rich contextual understanding for household navigation. Additionally, ORB_SLAM is employed to enhance the map's localization accuracy, ensuring precise alignment between the robot’s position and the generated semantic map. Evaluated with custom metrics, our pipeline demonstrates robust performance in mapping and localization, and we are open sourcing the complete codebase to support further advancements in household robotics research.
+Our proactive mapping framework intergrates Khronos, semantic-inference and ORB_SLAM2 algorithm. We introduce a unified pipeline for the Stretch robot that fuses **semantic-inference** and **ORB_SLAM2** for proactive mapping. Leveraging Khronos, a semantic segmentation module, to analyze and label environments in real time, providing rich contextual understanding for household navigation. Additionally, ORB_SLAM2 is employed to enhance the map's localization accuracy, ensuring precise alignment between the robot’s position and the generated semantic map. Evaluated with custom metrics, our pipeline demonstrates robust performance in mapping and localization, and we are open sourcing the complete codebase to support further advancements in household robotics research.
 
 ## Evaluation ✍🏼
 
-This is main evaluation of the Stretch Mapping project, where we assess the performance of our proactive mapping pipeline in a household scenario with a person moving around the environment. The evaluation focuses on the integration of **Khronos** for semantic segmentation and **ORB_SLAM** for localization.
+We assess the performance of our proactive mapping pipeline in a household scenario with a person moving around the environment. The evaluation focuses on the integration of **Khronos** for semantic segmentation and **ORB_SLAM2** solely for precise localization using thereby making this pipeline a robot-agnostic approach.
 
 
 [![Watch the video](https://img.youtube.com/vi/9r7H5XKUNsc/maxresdefault.jpg)](https://www.youtube.com/watch?v=9r7H5XKUNsc)
@@ -50,14 +48,14 @@ This is main evaluation of the Stretch Mapping project, where we assess the perf
 ---
 ## Results 📊
 
-The Stretch Mapping project has shown promising results in proactive mapping and localization. The bar plot illustrates the object precision scores across various scenarios, comparing two configurations: Khronos with the robot's odometry (blue) and Khronos integrated with ORBSLAM2 (red). The results highlight that integrating ORBSLAM2 enhance precision in scenarios involving object displacement out-of-view. However, the two configurations perform comparably in scenarios with humans moving in view.
+The bar plot illustrates the object precision scores across various scenarios, comparing two configurations: Khronos with the robot's odometry (blue) and Khronos integrated with ORBSLAM2 (red). The results highlight that integrating ORBSLAM2 enhance precision in scenarios involving object displacement out-of-view. However, the two configurations perform comparably in scenarios with humans moving in view.
 
 <div align="center">
    <img src="./doc/recall_score_bar_plot.png" alt="Bar Plot of Mapping Accuracy">
 </div>
 
 ### Mapping Results
-The following images showcase the mapping results from different scenarios evaluated in the Stretch Mapping project. Each scenario highlights the robot's ability to map and understand its environment under various conditions.
+The following images showcase the mapping results from different scenarios on which our framework is evaluated. Each scenario highlights the robot's ability to map and understand its environment under various conditions.
 1. [**Static Objects + No People in view**](./doc/Static_Objects_No_Person_inView.md):
    *The robot maps an apartment without dynamic objects or human presence.*
 2. [**Static Objects + People in view**](./doc/Static_Objects_Person_in_View.md):
@@ -66,6 +64,8 @@ The following images showcase the mapping results from different scenarios evalu
    *Objects are displaced around the scene (behind the robot) but no dynamic objects or people are present.*
 4. [**Dynamic Objects + Person Walking in view**](./doc/Dynamic_Objects_Person_InView.md):
    *Objects are moved by a person while the robot maps the environment.*
+   
+For a detailed analysis, please check out the results in the `doc` folder
 
 ## Notice for Git Commits ⚠️
 

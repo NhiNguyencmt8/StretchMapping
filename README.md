@@ -26,17 +26,17 @@ system. IEEE Transactions on Robotics, 31(5):1147–1163, 2015.
 ## Quantitative Evaluation ✍🏼
 <!-- [![Watch the video](https://img.youtube.com/vi/9r7H5XKUNsc/maxresdefault.jpg)](https://www.youtube.com/watch?v=9r7H5XKUNsc) -->
 
-We assess the performance of our proactive mapping pipeline in a household environment with a person interacting with objects both in and out of the Stretch robot's field of view. We systematically evaluate our framework's ability to track dynamic objects within the robot's field of view and objects displaced outside the robot's field of view by deploying the robot in the following four apartment scenarios:
+We assess the performance of our proactive mapping pipeline in a household environment with a person interacting with objects both in and out of the Stretch robot's field of view. We systematically evaluate our framework's ability to track moving objects and people within the robot's field of view and map objects displaced outside the robot's field of view by deploying the robot in the following four apartment scenarios:
 1. [**Static Objects + No Person In View**](./doc/Static_Objects_No_Person_inView.md):
    *No people are present in the apartment and all objects remain still.*
-2. [**Static Objects + Person in View**](./doc/Static_Objects_Person_in_View.md):
+2. [**Static Objects + Person Moving in View**](./doc/Static_Objects_Person_in_View.md):
    *A person moves inside the aparment within the robot's field of view but does not move any objects.*
 3. [**Displaced Objects + No Person in View**](./doc/Displaced_Objects_No_Person_InView.md):
    *A person moves an object but remains outside the robot's field of view.*
-4. [**Displaced Objects + Person in View**](./doc/Dynamic_Objects_Person_InView.md):
-   *A person mvoes an object within the robot's field of view.*
+4. [**Moving Objects + Person Moving in View**](./doc/Dynamic_Objects_Person_InView.md):
+   *A person moves an object within the robot's field of view.*
 
-The following bar plot depicts the object recall scores of Khronos using the robot's odometry, shown in blue, and Khronos using localization measurements from ORBSLAM2, shown in red. Recall measures the mapping frameworks ability to correctly identify all object instances in the environment.
+The following bar plot depicts the object recall scores of Khronos using the robot's odometry, shown in blue, and Khronos using localization measurements from ORBSLAM2, shown in red, for all four scenarios. Recall measures the mapping framework's ability to correctly capture all object instances in the environment.
 
 <div align="center">
    <img src="./doc/recall_score_bar_plot.png" alt="Bar Plot of Mapping Accuracy">
@@ -50,7 +50,7 @@ This repository is tested on Ubuntu 20.04 and ROS Kinetic, but would potentially
 
 ---
 
-## Support and Contribution
+## Support and Contribution 🤝
 
 If you have any questions, feel free to post an issue on this repo or please reach out to our contributers. We're happy to help! To contribute to this codebase, please open a pull request or reach out to us via email.
 

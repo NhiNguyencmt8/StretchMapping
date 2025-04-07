@@ -1,6 +1,12 @@
-# Stretch Mapping: A Proactive Mapping Pipeline for Household Tidying
+Welcome to **Stretch Mapping**, a semantic mapping framework built on [Khronos](https://github.com/MIT-SPARK/Khronos)[1] and ORB-SLAM2[2] for creating a semantic map using the [Hello Robot Stretch](https://hello-robot.com) mobile manipulator. Khronos is a semantic mapping pipeline that relies on visual SLAM, and semantic segmentation from RGB-D perception, and creates a hierarchical 3-D map of the world. We utilize the Stretch manipulation platform, which is equipped with a Intel RealSense D435i. We use [semantic inference](https://github.com/harshmuriki/semantic_inference) codebase which offers ROS integration for semantic segmentation and [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2) codebase with ROS integration for robot localization. This mapping framework is capable of creating hierarchical object-centric maps, tracking moving objects, and maintaining long-term object changes, and provides a rich contextual understanding for household navigation and mobile manipulation.
 
-Welcome to **Stretch Mapping**, a proactive mapping framework that is usable for Stretch's indoor tasks in household environments. 🤖🧹👕🧸
+[1] Lukas Schmid, Marcus Abate, Yun Chang, and Luca Carlone. Khronos: A unified approach for spatio-temporal
+metric-semantic slam in dynamic environments. In Proc. of Robotics: Science and Systems (RSS), Delft, Nether-
+lands, July 2024.
+
+[2] Montiel J. M. M. Mur-Artal, Raúl and Juan D. Tardós. ORB-SLAM: a versatile and accurate monocular SLAM
+system. IEEE Transactions on Robotics, 31(5):1147–1163, 2015.
+
 
 [![Python 3](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
 <!-- [![GitHub Stars](https://img.shields.io/github/stars/username/repository?style=social)](https://github.com/NhiNguyencmt8/StretchMapping) -->
@@ -14,7 +20,6 @@ Welcome to **Stretch Mapping**, a proactive mapping framework that is usable for
 
 
 **Table of Contents**
-- [Overview 👓](#overview)
 - [Evaluation ✍🏼](#evaluation-)
 - [Installation 🚀](doc/Installation.md)
   - [Setup a Catkin Workspace 🛠️](doc/Installation.md#setup-a-catkin-workspace-)
@@ -30,9 +35,6 @@ Welcome to **Stretch Mapping**, a proactive mapping framework that is usable for
 - [Results 📊](#results-)
 - [Notice for Git Commits ⚠️](#notice-for-git-commits-)
 - [Support 🤝](#support-)
-
-## Overview 👓
-Our proactive mapping framework intergrates Khronos, semantic-inference and ORB_SLAM2 algorithm. We introduce a unified pipeline for the Stretch robot that fuses **semantic-inference** and **ORB_SLAM2** for proactive mapping. Leveraging Khronos, a semantic segmentation module, to analyze and label environments in real time, providing rich contextual understanding for household navigation. Additionally, ORB_SLAM2 is employed to enhance the map's localization accuracy, ensuring precise alignment between the robot’s position and the generated semantic map. Evaluated with custom metrics, our pipeline demonstrates robust performance in mapping and localization, and we are open sourcing the complete codebase to support further advancements in household robotics research.
 
 ## Evaluation ✍🏼
 

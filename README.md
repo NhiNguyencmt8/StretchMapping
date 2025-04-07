@@ -4,13 +4,13 @@ Welcome to **Stretch Mapping**, a semantic household tidying project using the S
 🤖🧹👕🧸
 
 [![Python 3](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
-[![GitHub Stars](https://img.shields.io/github/stars/username/repository?style=social)](https://github.com/NhiNguyencmt8/StretchMapping)
+<!-- [![GitHub Stars](https://img.shields.io/github/stars/username/repository?style=social)](https://github.com/NhiNguyencmt8/StretchMapping) -->
 [![Email](https://img.shields.io/badge/Email-contact-blue.svg)](mailto:nnguyen349@gatech.edu)
 [![Stretch Robot](https://img.shields.io/badge/Stretch_Robot-V3-green.svg)](https://hello-robot.com/stretch-3-product)
 [![Open Source](https://img.shields.io/badge/Open_Source-yes-brightgreen.svg)](https://opensource.org/)
-<a href="https://www.ros.org">
-  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/ROS-Dark.svg" alt="ROS" width="40" height="40">
-</a>
+<!-- <a href="https://www.ros.org">
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/ROS-Dark.svg" alt="ROS" width="20" height="20">
+</a> -->
 
 
 
@@ -112,11 +112,11 @@ The following images showcase the mapping results from different scenarios evalu
 
 ---
 
-## Support 🤝
+## Support and Contriu
 
 If you have any questions, feel free to post an issue on this repo or please reach out to our contributers. We're happy to help!
 
 ## Contributors:
-1. Harsh Muriki: -
+1. Harsh Muriki: harshsuhith@gmail.com
 2. Nhi Nguyen (Leona): yennhi1908hcm@gmail.com
 3. Rahul Rustagi: rustagirahul24@gmail.com

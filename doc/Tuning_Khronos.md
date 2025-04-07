@@ -1,18 +1,3 @@
-
-### Running Khronos with Bag Files (Offline) 🗂️
-
-To process a bag file:
-```bash
-roslaunch khronos_ros stretch_mapping_offline.launch bag_path:=/your/path/to/bag/file
-```
-
-### Running Khronos Live (Online) 🟢
-
-For live mapping, set up the `segmentation_inference` module and run:
-```bash
-roslaunch khronos_ros stretch_mapping_online.launch
-```
-
 ### Tuning Khronos
 If you want your performance to be better on the robot, it is best to tune it. The tunning configs can be found at `config/mapper/yourconfig.yaml` file. Here is some of our intuition notes while tuning that might help:
 

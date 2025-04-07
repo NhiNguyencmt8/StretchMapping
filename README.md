@@ -19,50 +19,34 @@ system. IEEE Transactions on Robotics, 31(5):1147–1163, 2015.
 
 
 **Table of Contents**
-- [Evaluation ✍🏼](#evaluation-)
-- [Installation 🚀 and Usage 🎮](#installation-and-usage-)
-- [Results 📊](#results-)
+- [Quantitative Evaluation ✍🏼](#quantitative-evaluation-)
+- [Installation 🚀 and Usage 🎮](#installation--and-usage-)
 - [Support and Contribution 🤝](#support-and-contribution-)
 
-## Evaluation ✍🏼
+## Quantitative Evaluation ✍🏼
+<!-- [![Watch the video](https://img.youtube.com/vi/9r7H5XKUNsc/maxresdefault.jpg)](https://www.youtube.com/watch?v=9r7H5XKUNsc) -->
 
-We assess the performance of our proactive mapping pipeline in a household scenario with a person moving around the environment. The evaluation focuses on the integration of **Khronos** for semantic segmentation and **ORB_SLAM2** solely for precise localization using thereby making this pipeline a robot-agnostic approach.
+We assess the performance of our proactive mapping pipeline in a household environment with a person interacting with objects both in and out of the Stretch robot's field of view. We systematically evaluate our framework's ability to track dynamic objects within the robot's field of view and objects displaced outside the robot's field of view by deploying the robot in the following four apartment scenarios:
+1. [**Static Objects + No Person In View**](./doc/Static_Objects_No_Person_inView.md):
+   *No people are present in the apartment and all objects remain still.*
+2. [**Static Objects + Person in View**](./doc/Static_Objects_Person_in_View.md):
+   *A person moves inside the aparment within the robot's field of view but does not move any objects.*
+3. [**Displaced Objects + No Person in View**](./doc/Displaced_Objects_No_Person_InView.md):
+   *A person moves an object but remains outside the robot's field of view.*
+4. [**Displaced Objects + Person in View**](./doc/Dynamic_Objects_Person_InView.md):
+   *A person mvoes an object within the robot's field of view.*
 
-
-[![Watch the video](https://img.youtube.com/vi/9r7H5XKUNsc/maxresdefault.jpg)](https://www.youtube.com/watch?v=9r7H5XKUNsc)
-
-<!-- <div align="center">
-   <img src="./doc/Combined Experiment.gif" alt="Khronos Dynamic Mapping in Action">
-</div> -->
-
----
-## Results 📊
-
-The bar plot illustrates the object precision scores across various scenarios, comparing two configurations: Khronos with the robot's odometry (blue) and Khronos integrated with ORBSLAM2 (red). The results highlight that integrating ORBSLAM2 enhance precision in scenarios involving object displacement out-of-view. However, the two configurations perform comparably in scenarios with humans moving in view.
+The following bar plot depicts the object recall scores of Khronos using the robot's odometry, shown in blue, and Khronos using localization measurements from ORBSLAM2, shown in red. Recall measures the mapping frameworks ability to correctly identify all object instances in the environment.
 
 <div align="center">
    <img src="./doc/recall_score_bar_plot.png" alt="Bar Plot of Mapping Accuracy">
 </div>
 
+For scenarios with no people in view, we find that integrating ORBSLAM2 with Khronos results in objects being mapped more accurately than when using the robot's odometry, as seen from the higher recall scores. However, the performance of Khronos with ORBSLAM2 is comparable to that of Khronos with robot odometry when people are in view, possibly because ORBSLAM2 is not effectively ommitting features from moving people in view.
+
 ## Installation 🚀 and Usage 🎮
  
-This repository is tested on Ubuntu 20.04 and ROS Kinetic, but would potentially work on any ROS1 distribution. Refer to [Installation.md](doc/Installation.md) for installation instructions, and [Usage.md](doc/Installation.md) for instructions on how to run the system, both online on a robot and offline using ROS bags, and also a guide on how to tune various tuning parameters.
-
-
-### Mapping Results
-The following images showcase the mapping results from different scenarios on which our framework is evaluated. Each scenario highlights the robot's ability to map and understand its environment under various conditions.
-1. [**Static Objects + No People in view**](./doc/Static_Objects_No_Person_inView.md):
-   *The robot maps an apartment without dynamic objects or human presence.*
-2. [**Static Objects + People in view**](./doc/Static_Objects_Person_in_View.md):
-   *The robot maps an apartment with static objects and people visible in the scene.*
-3. [**Displaced Objects + No People in view**](./doc/Displaced_Objects_No_Person_InView.md):
-   *Objects are displaced around the scene (behind the robot) but no dynamic objects or people are present.*
-4. [**Dynamic Objects + Person Walking in view**](./doc/Dynamic_Objects_Person_InView.md):
-   *Objects are moved by a person while the robot maps the environment.*
-   
-For a detailed analysis, please check out the results in the `doc` folder
-
-
+This repository is tested on Ubuntu 20.04 and ROS Kinetic, but would potentially work on any ROS1 distribution. Refer to [Installation.md](doc/Installation.md) for installation instructions, and [Usage.md](doc/Usage.md) for instructions on how to run the system, both online on a robot and offline using ROS bags, and also a guide on how to tune various parameters.
 
 ---
 

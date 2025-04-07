@@ -1,4 +1,4 @@
-# Stretch Mapping: Proactive Mapping for Household Tidying
+# Stretch Mapping: A Proactive Mapping Pipeline for Household Tidying
 
 Welcome to **Stretch Mapping**, a semantic household tidying project using the Stretch robot. This project provides a proactive mapping framework that is usable for Stretch's indoor tasks in household environments.
 🤖🧹👕🧸

@@ -19,9 +19,18 @@ system. IEEE Transactions on Robotics, 31(5):1147–1163, 2015.
 
 
 **Table of Contents**
-- [Quantitative Evaluation ✍🏼](#quantitative-evaluation-)
 - [Installation 🚀 and Usage 🎮](#installation--and-usage-)
+- [Quantitative Evaluation ✍🏼](#quantitative-evaluation-)
 - [Support and Contribution 🤝](#support-and-contribution-)
+
+---
+
+
+## Installation 🚀 and Usage 🎮
+ 
+This repository is tested on Ubuntu 20.04 and ROS Kinetic, but would potentially work on any ROS1 distribution. Refer to [Installation.md](doc/Installation.md) for installation instructions, and [Usage.md](doc/Usage.md) for instructions on how to run the system, both online on a robot and offline using ROS bags, and also a guide on how to tune various parameters.
+
+---
 
 ## Quantitative Evaluation ✍🏼
 <!-- [![Watch the video](https://img.youtube.com/vi/9r7H5XKUNsc/maxresdefault.jpg)](https://www.youtube.com/watch?v=9r7H5XKUNsc) -->
@@ -43,10 +52,6 @@ The following bar plot depicts the object recall scores of Khronos using the rob
 </div>
 
 For scenarios with no people in view, we find that integrating ORBSLAM2 with Khronos results in objects being mapped more accurately than when using the robot's odometry, as seen from the higher recall scores. However, the performance of Khronos with ORBSLAM2 is comparable to that of Khronos with robot odometry when people are in view, possibly because ORBSLAM2 is not effectively ommitting features from moving people in view.
-
-## Installation 🚀 and Usage 🎮
- 
-This repository is tested on Ubuntu 20.04 and ROS Kinetic, but would potentially work on any ROS1 distribution. Refer to [Installation.md](doc/Installation.md) for installation instructions, and [Usage.md](doc/Usage.md) for instructions on how to run the system, both online on a robot and offline using ROS bags, and also a guide on how to tune various parameters.
 
 ---
 

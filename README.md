@@ -54,7 +54,7 @@ The following bar plot depicts the object recall scores of Khronos using the rob
 
 <div align="center">
 <!--    <img src="./doc/recall_bar_plot.png" alt="Bar Plot of Mapping Accuracy"> -->
-   <img src="https://github.com/user-attachments/assets/25a5bb99-40f3-4a32-9875-a9d75faf397d" alt="Bar Plot of Mapping Accuracy" width="65%">
+   <img src="./doc/recall_bar_plot_labeled.png" alt="Bar Plot of Mapping Accuracy" width="65%">
 </div>
 
 For scenarios with no people in view, we find that integrating ORBSLAM2 with Khronos results in objects being mapped more accurately than when using the robot's odometry, as seen from the higher recall scores. However, the performance of Khronos with ORBSLAM2 is comparable to that of Khronos with robot odometry when people are in view, possibly because ORBSLAM2 is not effectively ommitting features from moving people in view.

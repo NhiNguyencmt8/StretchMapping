@@ -50,14 +50,7 @@ We assess the performance of our proactive mapping pipeline in a household envir
 4. [**Moving Objects + Person Moving in View**](./doc/Dynamic_Objects_Person_InView.md):
    *A person moves an object within the robot's field of view.*
 
-The following bar plot depicts the object recall scores of Khronos using the robot's odometry, shown in blue, and Khronos using localization measurements from ORBSLAM2, shown in red, for all four scenarios. Recall measures the mapping framework's ability to correctly capture all object instances in the environment.
-
-<div align="center">
-<!--    <img src="./doc/recall_bar_plot.png" alt="Bar Plot of Mapping Accuracy"> -->
-   <img src="./doc/recall_bar_plot_labeled.png" alt="Bar Plot of Mapping Accuracy" width="65%">
-</div>
-
-For scenarios with no people in view, we find that integrating ORBSLAM2 with Khronos results in objects being mapped more accurately than when using the robot's odometry, as seen from the higher recall scores. However, the performance of Khronos with ORBSLAM2 is comparable to that of Khronos with robot odometry when people are in view, possibly because ORBSLAM2 is not effectively ommitting features from moving people in view.
+For each scenario, we measure the object recall scores of both Khronos using the robot's odometry and Khronos using localization measurements from ORBSLAM2. Recall measures the mapping framework's ability to correctly capture all object instances in the environment. Please refer to each individual scenario for detailed results.
 
 ---
 

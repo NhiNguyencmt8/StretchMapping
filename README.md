@@ -17,6 +17,7 @@ system. IEEE Transactions on Robotics, 31(5):1147–1163, 2015.
 [![Email](https://img.shields.io/badge/Email-contact-blue.svg)](mailto:nnguyen349@gatech.edu)
 [![Stretch Robot](https://img.shields.io/badge/Stretch_Robot-V3-green.svg)](https://hello-robot.com/stretch-3-product)
 [![Open Source](https://img.shields.io/badge/Open_Source-yes-brightgreen.svg)](https://opensource.org/)
+[![DOI](https://zenodo.org/badge/917302421.svg)](https://doi.org/10.5281/zenodo.18663774)
 <!-- <a href="https://www.ros.org">
   <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/ROS-Dark.svg" alt="ROS" width="20" height="20">
 </a> -->
@@ -26,6 +27,7 @@ system. IEEE Transactions on Robotics, 31(5):1147–1163, 2015.
 **Table of Contents**
 - [Installation 🚀 and Usage 🎮](#installation--and-usage-)
 - [Quantitative Evaluation ✍🏼](#quantitative-evaluation-)
+- [Citation 📚](#citation-)
 - [Support and Contribution 🤝](#support-and-contribution-)
 
 ---
@@ -51,6 +53,23 @@ We assess the performance of our proactive mapping pipeline in a household envir
    *A person moves an object within the robot's field of view.*
 
 For each scenario, we measure the object recall scores of both Khronos using the robot's odometry and Khronos using localization measurements from ORBSLAM2. Recall measures the mapping framework's ability to correctly capture all object instances in the environment. Please refer to each individual scenario for detailed results.
+
+---
+
+## Citation 📚
+
+If you use this repository in your research, please cite:
+
+```bibtex
+@software{stretchmapping2026,
+   title        = {StretchMapping: Semantic Mapping on Hello Robot Stretch with Khronos and ORB-SLAM2},
+   author       = {Muriki, Harsh and Nguyen, Nhi and Rustagi, Rahul},
+   year         = {2026},
+   publisher    = {Zenodo},
+   doi          = {10.5281/zenodo.18663774},
+   url          = {https://doi.org/10.5281/zenodo.18663774}
+}
+```
 
 ---
 
